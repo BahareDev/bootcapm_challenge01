@@ -1,0 +1,158 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* root variable */
+:root {
+  --body-color: #1e1e1e;
+  --primary-color: #ffff;
+  --secendory-color: #219f95;
+  --subtitle-color: #696969;
+  --link-color: #234894;
+  --frame-color: #afcedd;
+}
+
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+header {
+  padding: 1.5rem 2rem; 
+}
+
+.stack {
+  display: grid;
+  gap: 50px;
+  width: 100%;
+  justify-items: center;
+  align-content: center;
+}
+
+.card {
+  background-color: var(--primary-color);
+  width: 100%;
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card__title {
+  display: flex;
+  align-items: center;
+}
+
+.card__title .card--number {
+  background-color: var(--frame-color);
+  color: var(--link-color);
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.card__title .card--subtitle {
+  color: var(--link-color);
+}
+
+.card__title .card--date {
+  color: var(--subtitle-color);
+  margin-right: auto;
+}
+
+.card__info {
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.card__info a {
+  color: var(--body-color);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.card__info span {
+  color: var(--subtitle-color);
+  margin: 0.5rem 0;
+  flex: 0 0 100%;
+}
+
+.card__action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.card__action img {
+  border-radius: 8px;
+}
+
+.card__action span {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.btn {
+  outline: 0;
+  border: 0;
+  background-color: var(--secendory-color);
+  color: var(--primary-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 0 0 100%;
+  margin: 20px 0 0 0;
+}
+
+/* Media Query */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .stack {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card__action {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    flex: none;
+    margin-right: auto;
+    margin-top: 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .stack {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card__action {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    flex: none;
+    margin-right: auto;
+    margin-top: 0;
+  }
+}
+
+/* @media only screen and (min-width: 1200px) {
+  .stack {
+    grid-template-columns: repeat(3, 1fr);
+    gap: px;
+  }
+} */
