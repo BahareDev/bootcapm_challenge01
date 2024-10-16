@@ -13,6 +13,7 @@ This repository contains the solution to **Bootcamp Challenge 01**, a front-end 
 ## Project Overview
 
 The project involves building a responsive web layout based on a design provided in Figma. The key goals of the project are:
+[Preview of project](#https://baharedev.github.io/bootcapm_challenge01/src/)
 
 - Practice **responsive design** principles.
 - Develop reusable **React components**.
@@ -28,4 +29,4 @@ The project involves building a responsive web layout based on a design provided
 - **HTML & CSS**: For structure and styling.
 
 ## Contributing
-- If you like to contribute to this project, feel free to fork the repository and submit a pull request. Please make sure to follow the code style and include appropriate tests if necessary.
+If you like to contribute to this project, feel free to fork the repository and submit a pull request. Please make sure to follow the code style and include appropriate tests if necessary.
